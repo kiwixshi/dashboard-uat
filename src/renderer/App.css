@@ -1,0 +1,169 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  position: relative;
+  color: whitesmoke;
+  /* background: linear-gradient(
+    120.96deg,
+    #DAE2F8 -29.09%,
+    #c7a4d6 51.77%,
+    #D6A4A4 129.39%
+  ); */
+  background-color: rgb(29, 29, 30);
+  font-family: sans-serif;
+  display: flex;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  appearance: none;
+  font-size: 1.3rem;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  transition: all ease-in 0.1s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  height: fit-content;
+  width: fit-content;
+  margin: 10px;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.Hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+
+.b{
+  border: 1px solid whitesmoke;
+  border-radius: 15px;
+}
+
+.bar-chart{
+  flex: 5;
+  min-height: 60vh;
+}
+
+.bar{
+  height: 100%;
+  min-height: 60vh;
+}
+
+.stats{
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  gap: 1rem;
+}
+
+
+.stats > * {
+  flex: 1;
+}
+
+.split{
+  flex: 7;
+  /* flex-grow: 5; */
+  display: flex;
+  gap: 1rem;
+}
+
+.split > *{
+  flex: 1;
+}
+
+.dashboard{
+  width: 98vw;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 0.5rem;
+}
+
+#select-day{
+  position: absolute;
+  margin-top: 0.4rem;
+  right: 1rem;
+}
+
+#lb{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+h1{
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+table, th, td{
+  border: 1px solid #555;
+  border-collapse: collapse;
+}
+
+table{
+  margin: 0.25rem;
+  height: 20vh;
+  width: 95%;
+}
+
+p{
+  text-align: center
+}
+
+td{
+  padding: 1rem;
+  text-align: center;
+}
